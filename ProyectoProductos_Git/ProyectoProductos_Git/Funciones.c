@@ -67,7 +67,7 @@ void AltaCliente()
 			{
 				fread(&Clientes, sizeof(Clientes), 1, pf);
 			}
-		printf("El NºCliente del Ultimo Registro : %d\n\n", Clientes.IdCliente);
+		printf("El NÂºCliente del Ultimo Registro : %d\n\n", Clientes.IdCliente);
 	}
 
 	PedirDatosCliente();
@@ -136,7 +136,7 @@ void ModifiCliente()
 			fread(&Clientes, sizeof(Clientes), 1, pf);
 		}
 		ultidcliente = Clientes.IdCliente;
-		printf("El NºCliente del Ultimo Registro : %d\n\n", Clientes.IdCliente);
+		printf("El NÂºCliente del Ultimo Registro : %d\n\n", Clientes.IdCliente);
 		do {
 			printf("Introduce el Id del Cliente que quieras modificar : ");
 			scanf("%d%c", &idcliente, &limp);
@@ -222,7 +222,7 @@ void ConsulCliente()
 			fread(&Clientes, sizeof(Clientes), 1, pf);
 		}
 		ultidcliente = Clientes.IdCliente;
-		printf("El NºCliente del Ultimo Registro : %d\n\n", Clientes.IdCliente);
+		printf("El NÂºCliente del Ultimo Registro : %d\n\n", Clientes.IdCliente);
 		do {
 			printf("IDCliente que quiera consultar : ");
 			scanf("%d%c", &idcliente, &limp);
@@ -235,7 +235,7 @@ void ConsulCliente()
 			{
 				system("cls");
 				printf("\t\t\tFICHERO DE CLIENTES\n\t\t\t------------------\n");
-				printf("NºCliente : %d\nNombre : %s\nDomicilio : %s\nCodPostal : %s\nMunicipio : %s\nNIF : %s\n", Clientes.IdCliente, Clientes.Nombre, Clientes.Domicilio, Clientes.CodPostal, Clientes.Municipio, Clientes.NIF);
+				printf("NÂºCliente : %d\nNombre : %s\nDomicilio : %s\nCodPostal : %s\nMunicipio : %s\nNIF : %s\n", Clientes.IdCliente, Clientes.Nombre, Clientes.Domicilio, Clientes.CodPostal, Clientes.Municipio, Clientes.NIF);
 				printf("Pulsa Intro para continuar");
 				getch();
 				fclose(pf);
@@ -249,7 +249,7 @@ void PedirDatosCliente()
 {
 	system("cls");
 	printf("\t\t\tFICHERO DE CLIENTES\n\t\t\t------------------\n");
-	printf("NºCliente : \nNombre : \nDomicilio : \nCodPostal : \nMunicipio : \nNIF : \n");
+	printf("NÂºCliente : \nNombre : \nDomicilio : \nCodPostal : \nMunicipio : \nNIF : \n");
 	gotoxy(11, 2);
 	scanf("%d%c", &Clientes.IdCliente, &limp);
 	gotoxy(8, 3);
@@ -268,8 +268,8 @@ void PedirModificarCliente()
 {
 	system("cls");
 	printf("\t\t\tFICHERO DE CLIENTES\n\t\t\t------------------\n");
-	printf("NºCliente : %d\nNombre : %s\nDomicilio : %s\nCodPostal : %s\nMunicipio : %s\nNIF : %s\n", Clientes.IdCliente, Clientes.Nombre, Clientes.Domicilio, Clientes.CodPostal, Clientes.Municipio, Clientes.NIF);
-	printf("\n\nNuevo NºCliente : \nNuevo Nombre : \nNuevo Domicilio : \nNuevo CodPostal : \nNuevo Municipio : \nNuevo NIF : \n");
+	printf("NÂºCliente : %d\nNombre : %s\nDomicilio : %s\nCodPostal : %s\nMunicipio : %s\nNIF : %s\n", Clientes.IdCliente, Clientes.Nombre, Clientes.Domicilio, Clientes.CodPostal, Clientes.Municipio, Clientes.NIF);
+	printf("\n\nNuevo NÂºCliente : \nNuevo Nombre : \nNuevo Domicilio : \nNuevo CodPostal : \nNuevo Municipio : \nNuevo NIF : \n");
 	gotoxy(17, 10);
 	scanf("%d%c", &Clientes.IdCliente, &limp);
 	gotoxy(14, 11);
@@ -288,7 +288,7 @@ void PedirDatosArticulos()
 {
 	system("cls");
 	printf("\t\t\tFICHERO DE ARTICULOS\n\t\t\t------------------\n");
-	printf("NºArticulo : \nDenominacion : \nPrecioCoste : \nPVP : \n");
+	printf("NÂºArticulo : \nDenominacion : \nPrecioCoste : \nPVP : \n");
 	gotoxy(12, 2);
 	scanf("%d%c", &Articulos.IdArticulo, &limp);
 	gotoxy(14, 3);
@@ -329,7 +329,7 @@ void AltaArticulo()
 		{
 			fread(&Articulos, sizeof(Articulos), 1, pf);
 		}
-		printf("El NºArticulo del Ultimo Registro : %d\n\n", Articulos.IdArticulo);
+		printf("El NÂºArticulo del Ultimo Registro : %d\n\n", Articulos.IdArticulo);
 	}
 
 	
@@ -389,7 +389,7 @@ void ModifiArticulo()
 			fread(&Articulos, sizeof(Articulos), 1, pf);
 		}
 		ultidarti = Articulos.IdArticulo;
-		printf("El NºCliente del Ultimo Registro : %d\n\n", Articulos.IdArticulo);
+		printf("El NÂºCliente del Ultimo Registro : %d\n\n", Articulos.IdArticulo);
 		do {
 			printf("Introduce el Id del Articulo que quieras modificar : ");
 			scanf("%d%c", &idarticulo, &limp);
@@ -473,7 +473,7 @@ void ConsulArticulo()
 			fread(&Articulos, sizeof(Articulos), 1, pf);
 		}
 		ultidarti = Articulos.IdArticulo;
-		printf("El NºCliente del Ultimo Registro : %d\n\n", Articulos.IdArticulo);
+		printf("El NÂºCliente del Ultimo Registro : %d\n\n", Articulos.IdArticulo);
 		do {
 			printf("IDArticulo que quiera consultar : ");
 			scanf("%d%c", &idarticulo, &limp);
@@ -486,7 +486,7 @@ void ConsulArticulo()
 			{
 				system("cls");
 				printf("\t\t\tFICHERO DE ARTICULOS\n\t\t\t------------------\n");
-				printf("NºArticulo : %d\nDenominacion : %s\nPrecCoste : %d\nPVP : %d\n", Articulos.IdArticulo, Articulos.Denominacion, Articulos.PrecCoste, Articulos.PVP);
+				printf("NÂºArticulo : %d\nDenominacion : %s\nPrecCoste : %d\nPVP : %d\n", Articulos.IdArticulo, Articulos.Denominacion, Articulos.PrecCoste, Articulos.PVP);
 				printf("Pulsa Intro para continuar");
 				getch();
 				fclose(pf);
@@ -500,8 +500,8 @@ void PedirModificarArticulos()
 {
 	system("cls");
 	printf("\t\t\tFICHERO DE ARTICULOS\n\t\t\t------------------\n");
-	printf("NºArticulo : %d\nDenominacion : %s\nPrecCoste : %d\nPVP : %d\n", Articulos.IdArticulo, Articulos.Denominacion, Articulos.PrecCoste, Articulos.PVP);
-	printf("\n\nNuevo NºArticulo : \nNuevo Denominacion : \nNuevo PrecCoste : \nNuevo PVP : \n");
+	printf("NÂºArticulo : %d\nDenominacion : %s\nPrecCoste : %d\nPVP : %d\n", Articulos.IdArticulo, Articulos.Denominacion, Articulos.PrecCoste, Articulos.PVP);
+	printf("\n\nNuevo NÂºArticulo : \nNuevo Denominacion : \nNuevo PrecCoste : \nNuevo PVP : \n");
 	gotoxy(18, 8);
 	scanf("%d%c", &Articulos.IdArticulo, &limp);
 	gotoxy(20, 9);
@@ -594,13 +594,13 @@ void ProgramaPedidos()
 	{
 		fread(&Clientes, sizeof(Clientes), 1, pf1);
 	}
-	printf("\n\nEl NºCliente del Ultimo Registro : %d\n", Clientes.IdCliente);
+	printf("\n\nEl NÂºCliente del Ultimo Registro : %d\n", Clientes.IdCliente);
 	rewind(pf2);
 	for ( i = 0; i < reg2; i++)
 	{
 		fread(&Articulos, sizeof(Articulos), 1, pf2);
 	}
-	printf("El NºArticulo del Ultimo Registro : %d\n\n", Articulos.IdArticulo);
+	printf("El NÂºArticulo del Ultimo Registro : %d\n\n", Articulos.IdArticulo);
 	printf("Pulsa Intro para proceder con la introduccion de datos\n");
 	getch();
 	
@@ -609,7 +609,7 @@ void ProgramaPedidos()
 	{
 	system("cls");
 	printf("\t\tFICHERO DE PEDIDOS\n\t\t------------------\n");
-	printf("NºCliente: \n\nNºArticulo\tDenominacion\tPVP\tCantidad\n------------------------------------------------\n");
+	printf("NÂºCliente: \n\nNÂºArticulo\tDenominacion\tPVP\tCantidad\n------------------------------------------------\n");
 	gotoxy(10, 2);
 	scanf("%d%c", &idcliente, &limp);
 		if (idcliente<0 || idcliente>Clientes.IdCliente)
@@ -697,7 +697,7 @@ void ProgramaPedidos()
 				
 			}
 		}while (idarticulo != 0);
-		printf("\nNºCliente: ");
+		printf("\nNÂºCliente: ");
 		scanf("%d%c", &idcliente, &limp);
 	}while (idcliente != 0);
 	
@@ -728,4 +728,20 @@ void ProgramaFacturacion()
 	fseek(pf3, 0, SEEK_END);
 	regPed = ftell(pf3) / sizeof(Pedidos);
 
+}
+
+int fCalcularNumeroArticulo(FILE * pf)
+{
+	ARTICULO reg;
+	int id = -1, i, tamArchivo;
+	tamArchivo = fCalcularTamanoFicheroArticulo(pf);
+	for (i = 0; i < tamArchivo && id == -1; i++) {
+		fread(&reg, sizeof(reg), 1, pf);
+		if (reg.estado == 0) {
+			id = i;
+		}
+	}
+	if (id == -1)
+		id = i;
+	return id;
 }
